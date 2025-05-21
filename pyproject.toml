@@ -1,15 +1,34 @@
 [project]
 name = "CryptoStrings"
-version = "1.0.0"
-description = "Cryptographically advanced and secure random string/number generator forstrings, numbers, and bytes & hex"
+version = "1.1.0"
+description = "Cryptographically secure random generator for strings, numbers, passwords, API keys, and bytes"
 authors = [{ name = "Sammy Folkhome", email = "support@vincio.cc" }]
-license = { text = "MIT" }
+license = { text = "GPL-3.0-or-later" }
 requires-python = ">=3.7"
 readme = "README.md"
+keywords = ["security", "cryptography", "random", "token", "password", "api-key"]
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Intended Audience :: Developers",
+    "License :: GPL-3.0-or-later",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.7",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Topic :: Security :: Cryptography",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/sammyfolkhome/CryptoStrings"
+"Bug Tracker" = "https://github.com/sammyfolkhome/CryptoStrings/issues"
 
 [tool.setuptools]
 packages = ["CryptoStrings"]
+include-package-data = true
 
 [build-system]
-requires = ["setuptools>=61.0"]
+requires = ["setuptools>=61.0", "wheel"]
 build-backend = "setuptools.build_meta"
