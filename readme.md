@@ -5,18 +5,22 @@ Cryptographically secure random generator for strings, numbers, and bytes & hex.
 ## Features
 
 - Generate secure random bytes with configurable security levels.
-- Generate secure random strings in various charsets (hex, base64, alphanumeric, printable, ascii, digits).
+- Generate secure random strings in various charsets (`hex`, `base64`, `alphanumeric`, `printable`, `ascii`, `digits`).
 - Generate secure random numbers with a specified number of bits.
 
 ## Installation
+
+```sh
+pip install RSNumberGen
+```
+
+Or, for local development:
 
 ```sh
 pip install .
 ```
 
 ## Usage
-
-Generate any amount of actually random & secure bytes
 
 ```python
 from RSNumberGen import generate_secure_bytes, generate_secure_string, generate_secure_number
@@ -32,74 +36,6 @@ random_b64 = generate_secure_string(64, charset='base64')
 
 # Generate a secure 128-bit random number
 random_number = generate_secure_number(128)
-```
-
-## Example
-
-```python
-from RSNumberGen import (
-    generate_secure_string,
-    generate_secure_number,
-    generate_secure_bytes
-)
-
-print("\n🔐 SECURE STRING EXAMPLES\n" + "-"*40)
-
-# Generate a secure token in base64 (64 characters)
-print("Base64 Token (64 chars):")
-print(generate_secure_string(64, charset='base64'))
-
-# Hex string
-print("\nHex Token (32 chars):")
-print(generate_secure_string(32, charset='hex'))
-
-# Alphanumeric password
-print("\nAlphanumeric Password (20 chars):")
-print(generate_secure_string(20, charset='alphanumeric'))
-
-# Printable ASCII string
-print("\nPrintable ASCII (50 chars):")
-print(generate_secure_string(50, charset='printable'))
-
-# Letters only
-print("\nLetters Only (A-Z, a-z, 30 chars):")
-print(generate_secure_string(30, charset='ascii'))
-
-# Digits only
-print("\nDigits Only (10 digits):")
-print(generate_secure_string(10, charset='digits'))
-
-
-print("\n🔢 SECURE NUMBER EXAMPLES\n" + "-"*40)
-
-# 128-bit secure number
-print("128-bit secure number:")
-print(generate_secure_number(128))
-
-# 256-bit secure number
-print("\n256-bit secure number:")
-print(generate_secure_number(256))
-
-# 12-bit secure number (small, good for OTPs)
-print("\n12-bit secure number:")
-print(generate_secure_number(12))
-
-
-print("\n📦 SECURE BYTES EXAMPLES\n" + "-"*40)
-
-# 16 bytes (128-bit)
-print("128-bit key (16 bytes, hex):")
-print(generate_secure_bytes(16).hex())
-
-# 32 bytes (256-bit)
-print("\n256-bit key (32 bytes, hex):")
-print(generate_secure_bytes(32).hex())
-
-# 64 bytes (raw output)
-print("\n64 bytes (raw output):")
-raw_bytes = generate_secure_bytes(64)
-print(f"Raw length: {len(raw_bytes)}")
-print(raw_bytes)
 ```
 
 ## API
@@ -125,6 +61,48 @@ Generates a secure random integer with the specified number of bits.
 
 - `bits`: Number of bits.
 - `security_level`: Passed to `generate_secure_bytes`.
+
+## Example
+
+```python
+from RSNumberGen import (
+    generate_secure_string,
+    generate_secure_number,
+    generate_secure_bytes
+)
+
+print("\n🔐 SECURE STRING EXAMPLES\n" + "-"*40)
+print("Base64 Token (64 chars):")
+print(generate_secure_string(64, charset='base64'))
+print("\nHex Token (32 chars):")
+print(generate_secure_string(32, charset='hex'))
+print("\nAlphanumeric Password (20 chars):")
+print(generate_secure_string(20, charset='alphanumeric'))
+print("\nPrintable ASCII (50 chars):")
+print(generate_secure_string(50, charset='printable'))
+print("\nLetters Only (A-Z, a-z, 30 chars):")
+print(generate_secure_string(30, charset='ascii'))
+print("\nDigits Only (10 digits):")
+print(generate_secure_string(10, charset='digits'))
+
+print("\n🔢 SECURE NUMBER EXAMPLES\n" + "-"*40)
+print("128-bit secure number:")
+print(generate_secure_number(128))
+print("\n256-bit secure number:")
+print(generate_secure_number(256))
+print("\n12-bit secure number:")
+print(generate_secure_number(12))
+
+print("\n📦 SECURE BYTES EXAMPLES\n" + "-"*40)
+print("128-bit key (16 bytes, hex):")
+print(generate_secure_bytes(16).hex())
+print("\n256-bit key (32 bytes, hex):")
+print(generate_secure_bytes(32).hex())
+print("\n64 bytes (raw output):")
+raw_bytes = generate_secure_bytes(64)
+print(f"Raw length: {len(raw_bytes)}")
+print(raw_bytes)
+```
 
 ## License
 
