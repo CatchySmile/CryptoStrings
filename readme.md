@@ -14,12 +14,6 @@ Cryptographically secure random generator for strings, numbers, and bytes & hex.
 pip install RSNumberGen
 ```
 
-Or, for local development:
-
-```sh
-pip install .
-```
-
 ## Usage
 
 ```python
