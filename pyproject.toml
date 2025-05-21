@@ -1,6 +1,6 @@
 [project]
 name = "CryptoStrings"
-version = "1.1.0"
+version = "1.1.1"
 description = "Cryptographically secure random generator for strings, numbers, passwords, API keys, and bytes"
 authors = [{ name = "Sammy Folkhome", email = "support@vincio.cc" }]
 license = { text = "GPL-3.0-or-later" }
@@ -10,7 +10,6 @@ keywords = ["security", "cryptography", "random", "token", "password", "api-key"
 classifiers = [
     "Development Status :: 5 - Production/Stable",
     "Intended Audience :: Developers",
-    "License :: GPL-3.0-or-later",
     "Programming Language :: Python :: 3",
     "Programming Language :: Python :: 3.7",
     "Programming Language :: Python :: 3.8",

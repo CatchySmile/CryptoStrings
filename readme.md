@@ -21,8 +21,7 @@ pip install CryptoStrings
 
 ## Example usage
 
-Refer to `example.py`. Simply run the file after CryptoStrings is installed and watch the magic! It will automatically 
-generate output for you to use immediantly or to use a base for your program.
+Refer to `example.py`. Simply run with CryptoStrings installed and watch the magic!
 
 
 ## Basic Usage
