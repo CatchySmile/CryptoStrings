@@ -1,0 +1,8 @@
+README.md
+pyproject.toml
+RSNumberGen/__init__.py
+RSNumberGen/core.py
+RSNumberGen.egg-info/PKG-INFO
+RSNumberGen.egg-info/SOURCES.txt
+RSNumberGen.egg-info/dependency_links.txt
+RSNumberGen.egg-info/top_level.txt
