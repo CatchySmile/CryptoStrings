@@ -1,6 +1,4 @@
-##
- BASIC STRING GENERATION
-##
+## BASIC STRING GENERATION
 
 16-character hex string:
   2aadb9995e299588
@@ -26,9 +24,8 @@
 8-character custom charset string (no similar-looking chars):
   KUATG647
 
-##
- BYTE GENERATION
-##
+## BYTE GENERATION
+
 
 16 random bytes (hex representation):
   3d128c06fde90cf40dba1fe1cadb369a
@@ -38,9 +35,7 @@ Security level comparison (32 bytes):
   High:     a738de12842825ce... (0.00ms)
   Paranoid: c3e73dc08e876489... (0.00ms)
 
-##
- NUMBER GENERATION
-##
+## NUMBER GENERATION
 
 16-bit random number (0-65535):
   2646
@@ -54,9 +49,8 @@ Security level comparison (32 bytes):
 128-bit random number:
   124119103688530067017722098191630710387
 
-##
- PASSWORD GENERATION
-##
+## PASSWORD GENERATION
+
 
 Default password (16 chars, 1+ digit, 1+ special):
   2kkrMBE^QafiRjOx
@@ -64,9 +58,8 @@ Default password (16 chars, 1+ digit, 1+ special):
 Strong password (20 chars, 3+ digits, 3+ special):
   MIy$IDrj4g9s!9BM!ejR
 
-##
- API KEY GENERATION
-##
+## API KEY GENERATION
+
 
 API key (24 chars):
   XDVa07sq36bIfO7RGuxwnCuy
@@ -77,9 +70,8 @@ User API key with prefix:
 Service API key (paranoid security):
   svc.LUZNGPkeLyQF4xQCWjxY40aCNL2X6PbQ
 
-##
- COMMON USE CASES
-##
+## COMMON USE CASES
+
 
 Session token:
   qfkKjHNmfhBg-CYjAqE3yiuggdRaMEciURn0EIDYTGWM9lEwIkipWIbY_SWO8jXl
@@ -93,9 +85,8 @@ Email verification code:
 UUID-like identifier:
   9f364a89-8c46-020d-e094-e03f28b37d7c
   
-##
- PERFORMANCE TEST
-##
+## PERFORMANCE TEST
+
 
 Generating 1000 tokens (32 chars) with different security levels:
 
