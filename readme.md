@@ -37,7 +37,7 @@ random_number = generate_secure_number(128)
 ## Example
 
 ```python
-from secure_generator import (
+from RSNumberGen import (
     generate_secure_string,
     generate_secure_number,
     generate_secure_bytes
