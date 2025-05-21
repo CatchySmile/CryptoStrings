@@ -228,7 +228,7 @@ All functions are thread-safe and can be called concurrently from multiple threa
 
 GPL-3.0 License
 
----
+--- https://github.com/CatchySmile/CryptoStrings/blob/main/readme.md
 
 Author: Sammy Folkhome  
 Email: support@vincio.cc
