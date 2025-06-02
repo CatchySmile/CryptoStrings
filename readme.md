@@ -232,3 +232,6 @@ GPL-3.0 License
 
 Author: Sammy Folkhome  
 Email: support@vincio.cc
+
+
+This project was originally started for personal use.
